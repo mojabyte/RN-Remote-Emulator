@@ -68,3 +68,11 @@ Could not run adb reverse: Command failed: path/to/sdk/adb -s emulator-5554 reve
 you need to specify your debug host IP and port in app's Developer menu -> Dev settings -> Debug server host & port, that is your local machine ip address and 8081 for port.
 
 > Note that after APK installation you don't need to do any of these steps. You can just start the npm server: `npm start` in the project directory of your local machine, run the app on the emulator in remote machine and then reload.
+
+if there was another error:
+
+`Exception in thread "Device List Monitor" java.lang.NullPointerException`
+
+try:
+
+`react-native run-android --deviceId <remoteEmulatorDeviceId>`
